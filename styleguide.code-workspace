@@ -1,17 +1,8 @@
 {
-    "folders": [
-        {
-            "path": "./rules"
-        },
-        {
-            "path": "./packages",
-        },
-        {
-            "path": "./configs",
-        },
-        {
-            "path": ".",
-            "name": "turbo"
-        }
-    ]
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    }
+  ]
 }

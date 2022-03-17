@@ -1,23 +1,19 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "turborepo-basic-yarn",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "rules/*",
-    "packages/*",
-    "configs/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
-  },
-  "packageManager": "yarn@3.2.0"
+    "turbo": "*"
+  }
 }
