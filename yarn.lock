@@ -416,6 +416,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/autoprefixer@npm:^9.0.0":
+  version: 9.7.2
+  resolution: "@types/autoprefixer@npm:9.7.2"
+  dependencies:
+    "@types/browserslist": "*"
+    postcss: 7.x.x
+  checksum: 7370a9b126cc5a2f4f20c5e1acb8b4ab17790f1d0108735fc732c3043314b0c7260c262d41bcaa3330b93432873063810662054d2483b786094afa76af467d8e
+  languageName: node
+  linkType: hard
+
+"@types/browserslist@npm:*":
+  version: 4.8.0
+  resolution: "@types/browserslist@npm:4.8.0"
+  checksum: 78b2126f9bc2f65bce74afdffd46988a5a734f935ff1f457c64bcc64158bf8a380ce68e0ca079d7ca6da34e4ea78bfee9e03d148e0439c92a489442422be7804
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:latest":
   version: 8.4.1
   resolution: "@types/eslint@npm:8.4.1"
@@ -433,7 +450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/fibers@npm:latest":
+"@types/fibers@npm:3.1.1, @types/fibers@npm:latest":
   version: 3.1.1
   resolution: "@types/fibers@npm:3.1.1"
   checksum: 3bcc53c92dcaabf77cf31274c06ba615a59d21730bdb47214f64d7bf356ab31712f1d9c79707e50d2c9d2f8cda8cca4f7e4c20ddf272b07397d20fb196dbc400
@@ -470,7 +487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-sass@npm:latest":
+"@types/node-sass@npm:^4.5.0, @types/node-sass@npm:latest":
   version: 4.11.2
   resolution: "@types/node-sass@npm:4.11.2"
   dependencies:
@@ -507,6 +524,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-dom@npm:^16.8.6":
+  version: 16.9.14
+  resolution: "@types/react-dom@npm:16.9.14"
+  dependencies:
+    "@types/react": ^16
+  checksum: 68a4ee88f7a56cdbfbca24b1936b9aa5dad8b40ffbf1f047ddf990454aec6e0c9da2a01c9ae87045e95236602061646c90d02f01281533e14f1970687873030f
+  languageName: node
+  linkType: hard
+
 "@types/react-dom@npm:^17.0.11, @types/react-dom@npm:latest":
   version: 17.0.13
   resolution: "@types/react-dom@npm:17.0.13"
@@ -538,7 +564,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sass@npm:latest":
+"@types/react@npm:^16":
+  version: 16.14.24
+  resolution: "@types/react@npm:16.14.24"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 823f3fc6219f59dff7a005ca33adbac70e7ef7a5e15a844c40ba36247c007bd1e1fbfc784052336f60ecbee09f06b7c6c7433e8cece3a87247061bbac74b2576
+  languageName: node
+  linkType: hard
+
+"@types/sass@npm:1.43.1, @types/sass@npm:latest":
   version: 1.43.1
   resolution: "@types/sass@npm:1.43.1"
   dependencies:
@@ -1532,16 +1569,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs@workspace:apps/docs"
   dependencies:
+    "@types/autoprefixer": ^9.0.0
+    "@types/fibers": 3.1.1
     "@types/node": ^17.0.12
+    "@types/node-sass": ^4.5.0
     "@types/react": 17.0.37
+    "@types/react-dom": ^16.8.6
+    "@types/sass": 1.43.1
     autoprefixer: ^10.4.4
     config: "*"
     eslint: 7.32.0
+    fibers: 5.0.1
     next: 12.0.8
     next-transpile-modules: 9.0.0
+    node-sass: 7.0.1
     postcss: ^8.4.12
     react: 17.0.2
     react-dom: 17.0.2
+    sass: ^1.49.9
     tailwindcss: ^3.0.23
     tsconfig: "*"
     typescript: ^4.5.3
@@ -2180,7 +2225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fibers@npm:latest":
+"fibers@npm:5.0.1, fibers@npm:latest":
   version: 5.0.1
   resolution: "fibers@npm:5.0.1"
   dependencies:
@@ -3691,7 +3736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-sass@npm:latest":
+"node-sass@npm:7.0.1, node-sass@npm:latest":
   version: 7.0.1
   resolution: "node-sass@npm:7.0.1"
   dependencies:
@@ -4031,6 +4076,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"picocolors@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "picocolors@npm:0.2.1"
+  checksum: 3b0f441f0062def0c0f39e87b898ae7461c3a16ffc9f974f320b44c799418cabff17780ee647fda42b856a1dc45897e2c62047e1b546d94d6d5c6962f45427b2
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -4096,6 +4148,16 @@ __metadata:
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
+  languageName: node
+  linkType: hard
+
+"postcss@npm:7.x.x":
+  version: 7.0.39
+  resolution: "postcss@npm:7.0.39"
+  dependencies:
+    picocolors: ^0.2.1
+    source-map: ^0.6.1
+  checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
   languageName: node
   linkType: hard
 
@@ -4532,7 +4594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:latest":
+"sass@npm:^1.49.9, sass@npm:latest":
   version: 1.49.9
   resolution: "sass@npm:1.49.9"
   dependencies:

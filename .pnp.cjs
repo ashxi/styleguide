@@ -548,6 +548,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/autoprefixer", [\
+        ["npm:9.7.2", {\
+          "packageLocation": "./.yarn/cache/@types-autoprefixer-npm-9.7.2-cbe82aa5c8-7370a9b126.zip/node_modules/@types/autoprefixer/",\
+          "packageDependencies": [\
+            ["@types/autoprefixer", "npm:9.7.2"],\
+            ["@types/browserslist", "npm:4.8.0"],\
+            ["postcss", "npm:7.0.39"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/browserslist", [\
+        ["npm:4.8.0", {\
+          "packageLocation": "./.yarn/cache/@types-browserslist-npm-4.8.0-ec93c731b0-78b2126f9b.zip/node_modules/@types/browserslist/",\
+          "packageDependencies": [\
+            ["@types/browserslist", "npm:4.8.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/eslint", [\
         ["npm:8.4.1", {\
           "packageLocation": "./.yarn/cache/@types-eslint-npm-8.4.1-014f0ae240-b5790997ee.zip/node_modules/@types/eslint/",\
@@ -661,6 +681,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/react", [\
+        ["npm:16.14.24", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-16.14.24-6f465049cb-823f3fc621.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:16.14.24"],\
+            ["@types/prop-types", "npm:15.7.4"],\
+            ["@types/scheduler", "npm:0.16.2"],\
+            ["csstype", "npm:3.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:17.0.37", {\
           "packageLocation": "./.yarn/cache/@types-react-npm-17.0.37-76d6f581ea-e68b0d59aa.zip/node_modules/@types/react/",\
           "packageDependencies": [\
@@ -683,6 +713,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/react-dom", [\
+        ["npm:16.9.14", {\
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-16.9.14-758ab4d1e1-68a4ee88f7.zip/node_modules/@types/react-dom/",\
+          "packageDependencies": [\
+            ["@types/react-dom", "npm:16.9.14"],\
+            ["@types/react", "npm:16.14.24"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:17.0.13", {\
           "packageLocation": "./.yarn/cache/@types-react-dom-npm-17.0.13-f79f9e6f0b-62c42a54ac.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
@@ -1897,16 +1935,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/docs/",\
           "packageDependencies": [\
             ["docs", "workspace:apps/docs"],\
+            ["@types/autoprefixer", "npm:9.7.2"],\
+            ["@types/fibers", "npm:3.1.1"],\
             ["@types/node", "npm:17.0.21"],\
+            ["@types/node-sass", "npm:4.11.2"],\
             ["@types/react", "npm:17.0.37"],\
+            ["@types/react-dom", "npm:16.9.14"],\
+            ["@types/sass", "npm:1.43.1"],\
             ["autoprefixer", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:10.4.4"],\
             ["config", "workspace:packages/config"],\
             ["eslint", "npm:7.32.0"],\
+            ["fibers", "npm:5.0.1"],\
             ["next", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:12.0.8"],\
             ["next-transpile-modules", "npm:9.0.0"],\
+            ["node-sass", "npm:7.0.1"],\
             ["postcss", "npm:8.4.12"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:17.0.2"],\
+            ["sass", "npm:1.49.9"],\
             ["tailwindcss", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:3.0.23"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"],\
@@ -4315,22 +4361,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@next/swc-win32-arm64-msvc", "npm:12.0.8"],\
             ["@next/swc-win32-ia32-msvc", "npm:12.0.8"],\
             ["@next/swc-win32-x64-msvc", "npm:12.0.8"],\
-            ["@types/fibers", null],\
-            ["@types/node-sass", null],\
+            ["@types/fibers", "npm:3.1.1"],\
+            ["@types/node-sass", "npm:4.11.2"],\
             ["@types/react", "npm:17.0.37"],\
-            ["@types/react-dom", null],\
-            ["@types/sass", null],\
+            ["@types/react-dom", "npm:16.9.14"],\
+            ["@types/sass", "npm:1.43.1"],\
             ["caniuse-lite", "npm:1.0.30001317"],\
-            ["fibers", null],\
+            ["fibers", "npm:5.0.1"],\
             ["jest-worker", "npm:27.0.0-next.5"],\
             ["node-fetch", "npm:2.6.1"],\
-            ["node-sass", null],\
+            ["node-sass", "npm:7.0.1"],\
             ["postcss", "npm:8.2.15"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:17.0.2"],\
             ["react-is", "npm:17.0.2"],\
             ["react-refresh", "npm:0.8.3"],\
-            ["sass", null],\
+            ["sass", "npm:1.49.9"],\
             ["stream-browserify", "npm:3.0.0"],\
             ["styled-jsx", "virtual:bf60baa97350b7f404055622ab060f4698c1985e1f39041264f1f0dc93f4f57a9739680e816f8b869466d73c87f5162a40074a33dd89f9fd0d46ea0771e305b4#npm:5.0.0-beta.6"],\
             ["use-subscription", "virtual:bf60baa97350b7f404055622ab060f4698c1985e1f39041264f1f0dc93f4f57a9739680e816f8b869466d73c87f5162a40074a33dd89f9fd0d46ea0771e305b4#npm:1.5.1"]\
@@ -4792,6 +4838,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["picocolors", [\
+        ["npm:0.2.1", {\
+          "packageLocation": "./.yarn/cache/picocolors-npm-0.2.1-fa0e648c44-3b0f441f00.zip/node_modules/picocolors/",\
+          "packageDependencies": [\
+            ["picocolors", "npm:0.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/picocolors-npm-1.0.0-d81e0b1927-a2e8092dd8.zip/node_modules/picocolors/",\
           "packageDependencies": [\
@@ -4810,6 +4863,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["postcss", [\
+        ["npm:7.0.39", {\
+          "packageLocation": "./.yarn/cache/postcss-npm-7.0.39-0f8737296e-4ac793f506.zip/node_modules/postcss/",\
+          "packageDependencies": [\
+            ["postcss", "npm:7.0.39"],\
+            ["picocolors", "npm:0.2.1"],\
+            ["source-map", "npm:0.6.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:8.2.15", {\
           "packageLocation": "./.yarn/cache/postcss-npm-8.2.15-8a34d0d953-07c309e531.zip/node_modules/postcss/",\
           "packageDependencies": [\
@@ -5983,7 +6045,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/tailwindcss-virtual-43757eaf68/0/cache/tailwindcss-npm-3.0.23-9f06667e4b-2e7fdd1156.zip/node_modules/tailwindcss/",\
           "packageDependencies": [\
             ["tailwindcss", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:3.0.23"],\
-            ["@types/autoprefixer", null],\
+            ["@types/autoprefixer", "npm:9.7.2"],\
             ["@types/postcss", null],\
             ["arg", "npm:5.0.1"],\
             ["autoprefixer", "virtual:ba56dc173c7ece72e1480aefcd1d10cda1629de2daa7f61b603fae838675c08883d872a9392eb3e84cc530eed79a8c2786d69c2798b8351fc0bd584f41a8d550#npm:10.4.4"],\
