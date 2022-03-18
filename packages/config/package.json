@@ -7,8 +7,24 @@
     "eslint-preset.js"
   ],
   "dependencies": {
+    "@types/eslint": "latest",
+    "@types/fibers": "latest",
+    "@types/next": "latest",
+    "@types/node-sass": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/sass": "latest",
+    "@types/typescript": "latest",
+    "eslint": "latest",
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "7.28.0"
+    "eslint-plugin-react": "7.28.0",
+    "fibers": "latest",
+    "next": "latest",
+    "node-sass": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sass": "latest",
+    "typescript": "latest"
   }
 }

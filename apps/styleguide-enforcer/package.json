@@ -2,12 +2,6 @@
   "name": "styleguide-enforcer",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "devDependencies": {
     "@types/node": "^17.0.12",
     "config": "*",

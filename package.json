@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "*"
+    "turbo": "*",
+    "typescript": "^4.5.3"
   },
   "packageManager": "yarn@3.2.0"
 }
