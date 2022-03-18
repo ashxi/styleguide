@@ -8,8 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "@types/node": "^17.0.12",
     "config": "*",
